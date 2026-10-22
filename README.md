@@ -1,49 +1,29 @@
-# SocialSleuth Guides
+# SocialSleuth Guides — Public Instagram Story Viewing
 
-Practical guides and small code examples for public Instagram Story viewing tools.
+Practical user guides for understanding how to view and save **currently available Instagram Stories from public accounts**. This public repository contains editorial information and comparisons, not SocialSleuth's production application or its private data-processing code.
 
-## Anonymous Instagram Story Viewer — live demo
+## Try the Anonymous Instagram Story Viewer
 
-**[Open the SocialSleuth Instagram Story Viewer on Hugging Face Spaces](https://huggingface.co/spaces/SocialSleuth/Instagram-story-viewer)**
+**[Open SocialSleuth's Instagram Story Viewer on Hugging Face Spaces](https://huggingface.co/spaces/SocialSleuth/Instagram-story-viewer)**
 
-The Space is a browser-based entry point for exploring **currently available Stories from public Instagram accounts**. Visitors can enter a public Instagram username or profile URL, complete the required verification, and continue to the connected SocialSleuth viewer.
+The Space is a starting point for checking available Stories from public Instagram profiles. Enter a username or public profile URL, follow the on-screen verification if prompted, and continue to the connected viewer.
 
-- Public accounts only; private and restricted Stories are not available.
-- No Instagram login is required for the public Story lookup.
-- Available public Stories can be viewed and downloaded in the connected experience.
-- The live page currently describes a free allowance of three distinct public usernames per UTC day; limits may change.
+- View publicly available Stories without signing into your Instagram account.
+- Download eligible public Stories when the connected tool offers that option.
+- Public viewers cannot unlock private accounts or Close Friends content.
+- Stories that have expired or were removed may no longer be available.
 
-**[Use the full Story Viewer on SocialSleuth](https://www.socialsleuth.xyz/instagram-story-viewer)**.
+**[Read the step-by-step guide: How to View Instagram Stories Anonymously](docs/how-to-view-instagram-stories-anonymously.md)**
 
-The Hugging Face Space is a static landing/entry page. Verification, quotas, Story retrieval and any archiving are handled by the connected service, not by this GitHub repository.
+For the full product experience, see the [SocialSleuth Instagram Story Viewer](https://www.socialsleuth.xyz/instagram-story-viewer).
 
-## Technical tutorial
+## More Reading
 
-**[Build a static Instagram Story Viewer front end with Hugging Face Spaces](docs/static-instagram-story-viewer-on-hugging-face.md)**
+- [Best Anonymous Instagram Story Viewers: Comparison](index.html)
+- [Instagram Activity Trackers: Comparison](instagram-activity-trackers-2026/index.html)
 
-This hands-on tutorial explains Static HTML Spaces, a minimal deployment configuration, accessibility and privacy boundaries, input normalization, and the separation between a static page and a production service.
+## Privacy and Scope
 
-### Runnable JavaScript example
+A public Story viewer is not a means to access private profiles, deleted content, or restricted Stories. Availability depends on the account's settings and whether the material is still accessible. Anonymous viewing here means that a personal Instagram login is not required for the public lookup; it does not imply absolute anonymity from every website or network operator.
 
-- [Instagram username/profile URL normalizer](examples/instagram-username.mjs)
-- [Node.js tests](examples/instagram-username.test.mjs)
-
-From the repository root with Node.js 18+:
-
-~~~bash
-node --test examples/instagram-username.test.mjs
-~~~
-
-The example accepts plain handles, @handles, and Instagram profile links. It rejects unsupported Story, post, or Reel URLs instead of pretending they are usernames.
-
-## More public resources
-
-- [Comparison of anonymous Instagram Story viewers](index.html)
-- [Instagram activity tracker guide](instagram-activity-trackers-2026/index.html)
-- [Hugging Face's official Static HTML Spaces documentation](https://huggingface.co/docs/hub/spaces-sdks-static)
-
-## Disclosure and limitations
-
-This public repository is operated by SocialSleuth and links to its own product. It is **not** the SocialSleuth production backend, an Instagram scraper, or a tool to access private profiles. The included JavaScript is an independent educational example, not a copy of proprietary implementation. Do not put secrets in static client-side code.
-
-SocialSleuth is not affiliated with Instagram or Meta. Respect privacy, copyright, applicable law, and third-party platform terms.
+**Disclosure:** This repository is maintained by SocialSleuth, which operates the linked viewer. SocialSleuth is not affiliated with Instagram or Meta. Respect privacy, copyright, applicable laws, and platform terms when accessing or saving public media.
